@@ -32,8 +32,8 @@ const GreenButton = ({
 }) => (
   <a
     href={href}
-    target="_blank"
-    rel="noopener noreferrer"
+    target={href.startsWith("#") ? undefined : "_blank"}
+    rel={href.startsWith("#") ? undefined : "noopener noreferrer"}
     className={`block text-center w-full py-5 rounded-full font-black text-sm md:text-xl uppercase tracking-tight btn-green shadow-xl transition-all active:scale-95 animate-pulse-subtle ${className}`}
   >
     {children}
@@ -202,7 +202,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                 R$ 5,99
              </div>
           </div>
-          <GreenButton href="#pack-basico" className="max-w-md">
+          <GreenButton href="#ofertas" className="max-w-md">
             EU QUERO MELHORAR MEUS STORIES!
           </GreenButton>
 
@@ -548,7 +548,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
       {/* 12. CTA Flutuante (Mobile) */}
       <div className={`fixed bottom-6 left-6 right-6 z-50 md:hidden transition-all duration-500 ${scrolled ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}>
-        <GreenButton href="#pack-basico">
+        <GreenButton href="#ofertas">
           LIBERAR PACK (R$ 5,99)
         </GreenButton>
       </div>
