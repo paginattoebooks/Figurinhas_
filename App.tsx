@@ -428,7 +428,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                 rel="noopener noreferrer"
                 className="block w-full py-5 bg-white text-[#E68A9E] rounded-full font-black text-xl md:text-2xl uppercase shadow-xl hover:bg-gray-50 active:scale-95 transition-all text-center"
               >
-                COMPRAR AGORA
+                COMPRAR POR 9,90
               </a>
 
               <div className="mt-10 px-4">
@@ -493,7 +493,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                     href={CHECKOUT_PREMIUM}
                     className="h-20 text-xl md:text-2xl shadow-[0_15px_30px_rgba(0,255,0,0.3)]"
                   >
-                    LIBERAR PACK PREMIUM
+                    COMPRAR AGORA
                   </GreenButton>
 
 
