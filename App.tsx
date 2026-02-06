@@ -493,7 +493,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                     href={CHECKOUT_PREMIUM}
                     className="h-20 text-xl md:text-2xl shadow-[0_15px_30px_rgba(0,255,0,0.3)]"
                   >
-                    COMPRAR AGORA
+                    COMPRE AGORA
                   </GreenButton>
 
 
