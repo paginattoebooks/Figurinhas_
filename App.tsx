@@ -202,10 +202,6 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                 R$ 9,90
              </div>
           </div>
-          <GreenButton href="#pack-basico" className="max-w-md">
-            EU QUERO MELHORAR MEUS STORIES!
-          </GreenButton>
-
         </div>
       </Section>
 
@@ -421,7 +417,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                 </li>
               </ul>
 
-              <div className="text-7xl md:text-8xl font-black mb-12 flex flex-col">
+              <div className="text-6xl md:text-7xl font-black mb-12 flex flex-col">
                 <span className="text-2xl opacity-80 mb-[-10px]">Por apenas</span>
                 R$ 9,90
               </div>
@@ -491,7 +487,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
                 <div className="text-center mt-4">
                   <span className="text-red-600 line-through text-2xl md:text-3xl font-black decoration-4 block mb-2">DE R$ 229,99</span>
-                  <div className="text-7xl md:text-8xl font-black mb-10 tracking-tighter">R$ 27,90</div>
+                  <div className="text-6xl md:text-7xl font-black mb-10 tracking-tighter text-[#00FF00]">R$ 27,90</div>
                   
                   <GreenButton
                     href={CHECKOUT_PREMIUM}
@@ -546,12 +542,6 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
          <p>Copyright © 2025 Trokajo Treinamentos. Todos os Direitos Reservados</p>
       </footer>
 
-      {/* 12. CTA Flutuante (Mobile) */}
-      <div className={`fixed bottom-6 left-6 right-6 z-50 md:hidden transition-all duration-500 ${scrolled ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}>
-        <GreenButton href="#pack-basico">
-          LIBERAR PACK (R$ 9,90)
-        </GreenButton>
-      </div>
     </div>
   );
 };
