@@ -202,7 +202,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
                 R$ 5,99
              </div>
           </div>
-          <GreenButton href={CHECKOUT_BASICO} className="max-w-md">
+          <GreenButton href="#pack-basico" className="max-w-md">
             EU QUERO MELHORAR MEUS STORIES!
           </GreenButton>
 
@@ -409,7 +409,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto px-2">
             
             {/* CARD PACK BÁSICO */}
-            <div className="bg-[#E68A9E] rounded-[3.5rem] p-8 md:p-12 text-white text-center shadow-[0_20px_50px_rgba(230,138,158,0.3)] relative transform transition-transform hover:scale-[1.02]">
+            <div id="pack-basico" className="bg-[#E68A9E] rounded-[3.5rem] p-8 md:p-12 text-white text-center shadow-[0_20px_50px_rgba(230,138,158,0.3)] relative transform transition-transform hover:scale-[1.02]">
               <h3 className="text-4xl md:text-6xl font-black uppercase mb-10 tracking-tight">PACK BÁSICO</h3>
               
               <ul className="text-left space-y-4 mb-16 inline-block mx-auto">
@@ -548,7 +548,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
       {/* 12. CTA Flutuante (Mobile) */}
       <div className={`fixed bottom-6 left-6 right-6 z-50 md:hidden transition-all duration-500 ${scrolled ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}>
-        <GreenButton href="#ofertas">
+        <GreenButton href="#pack-basico">
           LIBERAR PACK (R$ 5,99)
         </GreenButton>
       </div>
