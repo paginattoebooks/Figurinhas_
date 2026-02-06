@@ -32,8 +32,8 @@ const GreenButton = ({
 }) => (
   <a
     href={href}
-    target={href.startsWith("#") ? undefined : "_blank"}
-    rel={href.startsWith("#") ? undefined : "noopener noreferrer"}
+    target="_blank"
+    rel="noopener noreferrer"
     className={`block text-center w-full py-5 rounded-full font-black text-sm md:text-xl uppercase tracking-tight btn-green shadow-xl transition-all active:scale-95 animate-pulse-subtle ${className}`}
   >
     {children}
@@ -199,10 +199,10 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
           <div className="flex items-center gap-3">
              <span className="text-gray-600 text-xl font-medium">Por apenas</span>
              <div className="border-2 border-gold-light px-6 py-2 rounded-full text-4xl font-black gold-text bg-white shadow-sm">
-                R$ 5,99
+                R$ 9,90
              </div>
           </div>
-          <GreenButton href="#ofertas" className="max-w-md">
+          <GreenButton href="#pack-basico" className="max-w-md">
             EU QUERO MELHORAR MEUS STORIES!
           </GreenButton>
 
@@ -423,7 +423,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
               <div className="text-7xl md:text-8xl font-black mb-12 flex flex-col">
                 <span className="text-2xl opacity-80 mb-[-10px]">Por apenas</span>
-                R$ 5,99
+                R$ 9,90
               </div>
 
               <a
@@ -491,7 +491,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
                 <div className="text-center mt-4">
                   <span className="text-red-600 line-through text-2xl md:text-3xl font-black decoration-4 block mb-2">DE R$ 229,99</span>
-                  <div className="text-7xl md:text-8xl font-black mb-10 tracking-tighter">R$ 15,99</div>
+                  <div className="text-7xl md:text-8xl font-black mb-10 tracking-tighter">R$ 27,90</div>
                   
                   <GreenButton
                     href={CHECKOUT_PREMIUM}
@@ -548,8 +548,8 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
       {/* 12. CTA Flutuante (Mobile) */}
       <div className={`fixed bottom-6 left-6 right-6 z-50 md:hidden transition-all duration-500 ${scrolled ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}>
-        <GreenButton href="#ofertas">
-          LIBERAR PACK (R$ 5,99)
+        <GreenButton href="#pack-basico">
+          LIBERAR PACK (R$ 9,90)
         </GreenButton>
       </div>
     </div>
