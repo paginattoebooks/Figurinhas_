@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Analytics } from "@vercel/analytics/next";
 import { 
   CheckCircle2, 
   ShieldCheck, 
@@ -147,6 +148,7 @@ const CHECKOUT_PREMIUM = "https://somasoundsolutions.mycartpanda.com/checkout/20
 
   return (
     <div className="min-h-screen bg-[#F6F3EB]">
+      <Analytics />
       
       {/* 1. Alerta de Atualização (Topo) */}
       <div className="bg-red-600 text-white text-center py-2 px-4 font-bold text-sm md:text-base leading-tight">
